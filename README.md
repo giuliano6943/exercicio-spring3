@@ -35,6 +35,7 @@ O objetivo é construir uma API robusta, organizada e seguindo boas práticas de
 
 Estrutura típica de um projeto Spring Boot organizado em camadas:
 
+```text
 src/
 ├── main/
 │   ├── java/
@@ -46,8 +47,7 @@ src/
 │   └── resources/
 │       └── application.properties
 └── test/
-
-Código
+```
 
 ---
 
@@ -55,8 +55,8 @@ Código
 
 Antes de executar o projeto, certifique-se de ter instalado:
 
-- ☕ Java 17 ou superior
-- 📦 Maven
+- ☕ Java 17 ou superior  
+- 📦 Maven  
 - 🗄️ Banco de dados configurado (H2, PostgreSQL, MySQL, etc.)
 
 ---
@@ -64,53 +64,68 @@ Antes de executar o projeto, certifique-se de ter instalado:
 ## 🏃 Como Executar o Projeto
 
 ### 1️⃣ Clone o repositório
+
 ```bash
 git clone https://github.com/giuliano6943/exercicio-spring3.git
 ```
-2️⃣ Acesse o diretório
+
+### 2️⃣ Acesse o diretório
+
 ```bash
 cd exercicio-spring3
 ```
-3️⃣ Execute a aplicação
+
+### 3️⃣ Execute a aplicação
+
 ```bash
 mvn spring-boot:run
 ```
+
 A aplicação iniciará no endereço padrão:
-```bash
+
+```text
 http://localhost:8080
 ```
 
-📌 Endpoints da API
-A API disponibiliza os seguintes endpoints para gerenciamento de clientes:
+---
 
-📌 Endpoints da API
+## 📌 Endpoints da API
 
-A API disponibiliza os seguintes endpoints para gerenciamento de clientes:
+A API disponibiliza os seguintes endpoints para gerenciamento de **clientes**:
 
-Método	Endpoint	Descrição
-GET	/clients	Listar todos os clientes
-GET	/clients/{id}	Buscar cliente por ID
-POST	/clients	Inserir novo cliente
-PUT	/clients/{id}	Atualizar cliente existente
-DELETE	/clients/{id}	Deletar cliente
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| GET    | `/clients` | Listar todos os clientes |
+| GET    | `/clients/{id}` | Buscar cliente por ID |
+| POST   | `/clients` | Inserir novo cliente |
+| PUT    | `/clients/{id}` | Atualizar cliente existente |
+| DELETE | `/clients/{id}` | Deletar cliente |
+
+---
+
+## 🧪 Executando Testes
+
+Para rodar os testes automatizados:
 
 ```bash
 mvn test
 ```
 
-📝 Observações
+---
+
+## 📝 Observações
+
 Este exercício foi desenvolvido com foco em:
 
-Estruturação correta de camadas
+- Estruturação correta de camadas  
+- Boas práticas em APIs REST  
+- Tratamento centralizado de exceções  
+- Validações com Bean Validation  
+- Organização de código para projetos reais  
 
-Boas práticas em APIs REST
+---
 
-Tratamento centralizado de exceções
+## 👨‍💻 Autor
 
-Validações com Bean Validation
-
-Organização de código para projetos reais
-
-👨‍💻 Autor
-Giuliano D'Agosto Neto  
+**Giuliano D'Agosto Neto**  
 📌 Foco atual: Desenvolvimento Backend com Java & Spring Boot
