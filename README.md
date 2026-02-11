@@ -83,14 +83,16 @@ http://localhost:8080
 📌 Endpoints da API
 A API disponibiliza os seguintes endpoints para gerenciamento de clientes:
 
+📌 Endpoints da API
+
+A API disponibiliza os seguintes endpoints para gerenciamento de clientes:
+
 Método	Endpoint	Descrição
 GET	/clients	Listar todos os clientes
 GET	/clients/{id}	Buscar cliente por ID
 POST	/clients	Inserir novo cliente
 PUT	/clients/{id}	Atualizar cliente existente
 DELETE	/clients/{id}	Deletar cliente
-📦 Executando Testes
-Caso existam testes implementados, você pode executá-los com:
 
 ```bash
 mvn test
