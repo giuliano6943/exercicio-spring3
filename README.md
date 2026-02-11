@@ -1,5 +1,3 @@
-Perfeito 👌 abaixo está tudo formatado em Markdown pronto para colar no README.md do GitHub, já com os endpoints ajustados para /clients e com uma estrutura mais profissional para portfólio 🚀
-
 # 🚀 Exercício Spring Boot 3 – API REST
 
 Este repositório contém um exercício de **Spring Boot 3** desenvolvido como parte do módulo de **API REST, camadas, CRUD, tratamento de exceções e validações** do curso **Java Spring Professional**.
@@ -14,7 +12,7 @@ Este projeto demonstra a criação de uma **API REST em Java** utilizando o fram
 - ✅ Operações CRUD (Create, Read, Update, Delete)
 - ✅ Validações de entrada de dados
 - ✅ Tratamento de erros e exceções
-- ✅ Persistência com JPA
+- ✅ Persistência com JPA/Hibernate
 
 O objetivo é construir uma API robusta, organizada e seguindo boas práticas de desenvolvimento.
 
@@ -37,20 +35,19 @@ O objetivo é construir uma API robusta, organizada e seguindo boas práticas de
 
 Estrutura típica de um projeto Spring Boot organizado em camadas:
 
-
-
 src/
 ├── main/
-│ ├── java/
-│ │ ├── controller/
-│ │ ├── service/
-│ │ ├── repository/
-│ │ ├── model/
-│ │ └── exception/
-│ └── resources/
-│ └── application.properties
+│   ├── java/
+│   │   ├── controller/
+│   │   ├── service/
+│   │   ├── repository/
+│   │   ├── model/
+│   │   └── exception/
+│   └── resources/
+│       └── application.properties
 └── test/
 
+Código
 
 ---
 
@@ -67,23 +64,23 @@ Antes de executar o projeto, certifique-se de ter instalado:
 ## 🏃 Como Executar o Projeto
 
 ### 1️⃣ Clone o repositório
-
 ```bash
 git clone https://github.com/giuliano6943/exercicio-spring3.git
-
+```
 2️⃣ Acesse o diretório
+```bash
 cd exercicio-spring3
-
+```
 3️⃣ Execute a aplicação
+```bash
 mvn spring-boot:run
-
-
+```
 A aplicação iniciará no endereço padrão:
-
+```bash
 http://localhost:8080
+```
 
 📌 Endpoints da API
-
 A API disponibiliza os seguintes endpoints para gerenciamento de clientes:
 
 Método	Endpoint	Descrição
@@ -93,13 +90,13 @@ POST	/clients	Inserir novo cliente
 PUT	/clients/{id}	Atualizar cliente existente
 DELETE	/clients/{id}	Deletar cliente
 📦 Executando Testes
-
 Caso existam testes implementados, você pode executá-los com:
 
+```bash
 mvn test
+```
 
 📝 Observações
-
 Este exercício foi desenvolvido com foco em:
 
 Estruturação correta de camadas
@@ -113,6 +110,5 @@ Validações com Bean Validation
 Organização de código para projetos reais
 
 👨‍💻 Autor
-
-Desenvolvido por Giuliano D'Agosto Neto
+Giuliano D'Agosto Neto  
 📌 Foco atual: Desenvolvimento Backend com Java & Spring Boot
